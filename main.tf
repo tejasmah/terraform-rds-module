@@ -19,7 +19,7 @@ provider "aws" {
   #secret_key = "LfswMxw2Mh4/pPPq0JKL9hOXxVQQ2Mcg4GxZyILy"
 }
 
-data "aws_db_subnet_group" "default" {
+resource "aws_db_subnet_group" "default" {
   name = "main"
   subnet_ids = ["subnet-0b2867b08a896e992","subnet-0001a9bd1b9807a67"]
 
